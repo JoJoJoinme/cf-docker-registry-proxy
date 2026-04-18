@@ -5,10 +5,10 @@
   "description": "Cloudflare Worker Docker registry proxy with Docker Hub authenticated token exchange.",
   "type": "module",
   "scripts": {
-    "test": "node test/run-tests.js",
-    "check": "node test/run-tests.js"
+    "test": "npx -y node@20 test/run-tests.js",
+    "check": "npx -y node@20 test/run-tests.js"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=20"
   }
 }
