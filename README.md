@@ -59,6 +59,8 @@ docker pull quay.docker.example.com/org/image:latest
 npm test
 ```
 
+The test suite runs with Node 20 because it exercises the Worker `fetch()` handler using Web Platform APIs.
+
 ## GitHub Actions deployment
 
 This repository includes `.github/workflows/deploy.yml` and can deploy automatically on every push to `main` or from the Actions tab via manual trigger.
