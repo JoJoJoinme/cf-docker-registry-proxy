@@ -59,6 +59,27 @@ docker pull quay.docker.example.com/org/image:latest
 npm test
 ```
 
+## GitHub Actions deployment
+
+This repository includes `.github/workflows/deploy.yml` and can deploy automatically on every push to `main` or from the Actions tab via manual trigger.
+
+Set these GitHub Actions repository secrets before enabling automatic deploys:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+The workflow:
+
+1. Checks out the repository
+2. Installs dependencies with npm
+3. Runs `npm test`
+4. Deploys with the official `cloudflare/wrangler-action@v3`
+
+Cloudflare docs used for this setup:
+
+- [GitHub Actions | Cloudflare Workers docs](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)
+- [Wrangler docs](https://developers.cloudflare.com/workers/wrangler/)
+
 ## Limitations
 
 - Docker Hub account limits still apply; this is not an unlimited mirror.
