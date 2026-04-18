@@ -1,0 +1,14 @@
+{
+  "name": "cf-docker-registry-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Worker Docker registry proxy with Docker Hub authenticated token exchange.",
+  "type": "module",
+  "scripts": {
+    "test": "node test/run-tests.js",
+    "check": "node test/run-tests.js"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

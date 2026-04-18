@@ -1,0 +1,5 @@
+DOCKERHUB_USER=your-dockerhub-username
+DOCKERHUB_PAT=your-dockerhub-pat
+UA_BLOCKLIST=netcraft
+LANDING_PAGE_MODE=search
+LANDING_PAGE_URL=https://example.com
