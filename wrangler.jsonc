@@ -1,5 +1,5 @@
 {
-  "name": "cf-docker-registry-proxy",
+  "name": "docker-registry",
   "main": "src/index.js",
   "compatibility_date": "2024-08-25",
   "observability": {
